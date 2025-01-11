@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --primary-moderate-violet: hsl(263, 55%, 52%);
+    --primary-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --primary-very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --primary-white: hsl(0, 0%, 100%);
+
+    --secondary-neurtal-light-gray: hsl(0, 0%, 81%);
+    --seconday-light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+    background-color: #ECF2F8;
+    padding: 164px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    height: 572px;
+}
+
+.card {
+    height: 100%;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+}
+
+.profile-content {
+    display: flex; 
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-text h3 {
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px; /* 100% */
+}
+
+.profile-text p {
+    color: #FFF;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11px; /* 100% */
+    opacity: 0.5;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.purple {
+    border: 2px solid #A775F1;
+}
+
+
+#card-1 {
+    grid-column: 1 / span 2;
+    border-radius: 8px;
+    background-color: var(--primary-moderate-violet);
+    color: var(--primary-white);
+}
+
+#card-2 {
+    grid-column: 3 / span 1;
+    background-color: var(--primary-very-dark-grayish-blue);
+    color: var(--primary-white);
+
+}
+
+#card-3 {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 2;
+    background-color: var(--primary-white);
+}
+
+#card-4 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    background-color: var(--primary-white);
+}
+
+#card-5 {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    background-color: var(--primary-very-dark-blackish-blue);
+    color: var(--primary-white);
+
+}

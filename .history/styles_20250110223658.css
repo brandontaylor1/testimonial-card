@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --primary-moderate-violet: hsl(263, 55%, 52%);
+    --primary-very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --primary-very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --primary-white: hsl(0, 0%, 100%);
+
+    --secondary-neurtal-light-gray: hsl(0, 0%, 81%);
+    --seconday-light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+    background-color: #ECF2F8;
+    padding: 164px
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    background-color: --primary-white;
+}
+
+.card {
+    border: 1px solid black; 
+}
+
+#card-1 {
+    grid-column: 1 / 3;
+}
