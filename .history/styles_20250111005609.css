@@ -147,16 +147,11 @@ body {
 }
 
 
-@media screen and (max-width: 1065px) {
+@media screen and (max-width: 954px) {
     .testimonial-grid {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
-    }
-
-    .quotation {
-        top: 0;
-        right: 1.8rem;
     }
 
     #card-1 {

@@ -42,14 +42,14 @@ body {
     border-radius: 8px;
     box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
     position: relative;
-    z-index: 0;
+    z-index: 1;
 }
 
 .quotation {
     position: absolute;
     top: 0; 
     right: 5rem;
-    z-index: -1;
+    z-index: 0;
 
 }
 
@@ -71,7 +71,6 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 13px; /* 100% */
-    z-index: 2;
 }
 
 .profile-text p {
@@ -80,7 +79,6 @@ body {
     font-weight: 500;
     line-height: 11px; /* 100% */
     opacity: 0.5;
-    z-index: 2;
 }
 
 .profile-img {
@@ -95,7 +93,7 @@ body {
     font-weight: 600;
     line-height: normal;
     margin-top: 1.2rem;
-    z-index: 2;
+    z-index: 10;
 }
 
 .card-subheading {
@@ -105,7 +103,6 @@ body {
     line-height: 18px; /* 138.462% */
     margin-top: 1rem;
     opacity: 0.5;
-    z-index: 2;
 }
 
 .purple {
@@ -147,16 +144,11 @@ body {
 }
 
 
-@media screen and (max-width: 1065px) {
+@media screen and (max-width: 954px) {
     .testimonial-grid {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
-    }
-
-    .quotation {
-        top: 0;
-        right: 1.8rem;
     }
 
     #card-1 {
